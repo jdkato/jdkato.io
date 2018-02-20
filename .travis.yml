@@ -9,15 +9,6 @@ addons:
       #
       # TODO: Is this really needed?
       - libcurl4-openssl-dev
-env:
-  # Our CI pipeline is split into three components: structure (the
-  # style of our markup), content (our actual written text), and output
-  # (the produced HTML).
-  #
-  # See `ci/components/` for more information.
-  - TEST_SUITE=structure
-  - TEST_SUITE=content
-  - TEST_SUITE=output
 cache:
   # We cache our $GOPATH (used by Vale and Hugo), markdownlint, and
   # htmlproofer to speed up our builds.
@@ -26,8 +17,5 @@ cache:
     - $GOPATH/pkg
     - $(npm config get prefix)/bin/markdownlint
     - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
-install:
-  # Install Go 1.8:
-  - eval "$(gimme 1.8)"
 script:
-  - bash ci/components/$TEST_SUITE/run.sh
+  - bash ci/test.sh

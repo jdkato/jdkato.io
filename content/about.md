@@ -37,7 +37,7 @@ results at [Athletic.net][1], [Athlinks][2], and [Strava][3].
 
 - Proficient: Go & Python (5,000+ lines written)
 - Comfortable: JavaScript, Swift, Java & Rust  (500 - 1,000 lines written)
-- Past experience: C, C++, & R
+- Past experience: C, C++, R, & Julia
 
 #### Other
 

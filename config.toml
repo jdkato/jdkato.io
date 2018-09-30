@@ -17,7 +17,6 @@ summarylength = 30
 ## Site Settings
 [params]
     author = "jdkato"
-    title = "Title"
     description = ""
     authorimage = "img/me.png"
     dateformat = "Jan 2, 2006"

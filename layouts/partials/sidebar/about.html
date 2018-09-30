@@ -2,7 +2,6 @@
   <span class="site__title">
     <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
   </span>
-  <br>
   {{ with .Site.Params.authorimage }}
   {{ $strippedSlash := ($.Site.Params.authorimage | replaceRE "^(/)+(.*)" "$2") }}
   {{ $authorImage := (printf "%s/%s" $.Site.BaseURL $strippedSlash) }}

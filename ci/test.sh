@@ -14,8 +14,8 @@ set -e
 eval "$(gimme 1.8)"
 
 # Install Rust's stable toolchain using https://www.rustup.rs/.
-export PATH="$HOME/.cargo/bin:$PATH"
-curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain stable
+# export PATH="$HOME/.cargo/bin:$PATH"
+# curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain stable
 
 # Section 2: Global variables and utilities
 
@@ -35,7 +35,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # `content` directory.
 #
 # See https://github.com/jdkato/blocktest.
-cargo install blocktest && blocktest blog .md content
+# cargo install blocktest && blocktest blog .md content
 
 # We then test the formatting style of our Markdown (see the root-level
 # `.markdownlint.json` file for more details).

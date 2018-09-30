@@ -7,16 +7,6 @@ var frontMatterSchema = {
     'id': '/FrontMatter',
     'type': 'object',
     'properties': {
-      'header': {
-        'type': 'object',
-        'properties': {
-            'image': {'type': 'string'},
-            'preview': {'type': 'boolean'},
-            'alt': {'type': 'string'},
-            'caption': {'type': 'string'}
-        },
-        'required': ['image', 'preview', 'alt']
-      },
       'tags': {
         'type': 'array',
         'items': {'type': 'string'}
@@ -35,7 +25,7 @@ var frontMatterSchema = {
       'preview':  {'type': 'boolean'}
 
     },
-    'required': ['title', 'date', 'header']
+    'required': ['title', 'date']
 };
 
 glob('content/post/*.md', {}, function (er, files) {

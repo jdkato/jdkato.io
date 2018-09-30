@@ -132,6 +132,7 @@ var accuracyChart = new Chart(ctx, {
       }]
     },
     onClick: function (e, a, b) {
+      console.log(a[0]._index)
       var lang = langData.labels[a[0]._index]
       var stats = lang2Stats[lang]
       var base = '<a href="' + stats[1] + '">' + stats[0] + '</a>'

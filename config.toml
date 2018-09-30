@@ -1,5 +1,5 @@
 ## Basic Configuration
-baseurl = ""
+baseurl = "https://jdkato.io/"
 languageCode = "en"
 
 title = "jdkato.io"

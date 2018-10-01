@@ -61,7 +61,7 @@ season 7:
 |      5     |        5.56        |    Warped Wall   |        3.77        |
 
 We see that the sum of Kevin's individual splits (56.4 seconds) matches his
-[official clocking][3]. And while this may seem rather time consuming at first
+[official clocking][3]. And while this may seem rather time-consuming at first
 glance, it doesn't require much more effort than simply watching does. This is
 especially true since I've written two simple Python scripts to do most of the
 heavy lifting: [split_taking.py][4] (for courses with no time limit) and

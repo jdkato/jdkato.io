@@ -91,7 +91,7 @@ I noticed:
 - The Warped Wall, oddly enough, had a wider range of times during the finals
   than during qualifying on all but the Orlando and Pittsburgh courses.
 - Snake Crossing's median completion time of 33.06 seconds was 27.29 seconds
-  longer than the next most time consuming third obstacle (Floating Tiles) in
+  longer than the next most time-consuming third obstacle (Floating Tiles) in
   the qualifying round. In the finals, it was 29.46 seconds longer than any
   other third obstacle.
 - San Pedro saw the slowest average finish times in both rounds, with its

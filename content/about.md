@@ -7,9 +7,6 @@ type = "about"
 My name is Joseph Kato.
 
 I’m a [software developer](https://github.com/jdkato) from Portland, Oregon.
-I'm currently running my own consulting firm, [errata.ai](https://errata.ai/),
-which offers quality assurance software and services related to collaborative
-writing.
 
 In my free time, I enjoy running and hiking. You can find some of my past
 results at [Athletic.net][1], [Athlinks][2], and [Strava][3].

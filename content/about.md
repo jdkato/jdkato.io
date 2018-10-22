@@ -43,7 +43,7 @@ results at [Athletic.net][1], [Athlinks][2], and [Strava][3].
 
 [1]: https://www.athletic.net/TrackAndField/Athlete.aspx?AID=533544#!/L0
 [2]: https://www.athlinks.com/athletes/75353415
-[3]: https://www.strava.com/athletes/3334824
+[3]: https://www.strava.com/athletes/joseph_kato
 [4]: https://github.com/jdkato/prose
 [5]: https://github.com/errata-ai/vale
 [6]: https://errata-ai.github.io/vale/styles/

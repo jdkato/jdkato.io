@@ -18,4 +18,4 @@ cache:
     - $(npm config get prefix)/bin/markdownlint
     - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
 script:
-  - bash ci/test.sh
+  # - bash ci/test.sh

@@ -7,9 +7,6 @@ type = "about"
 My name is Joseph Kato.
 
 I’m a [software developer](https://github.com/jdkato) from Portland, Oregon.
-I'm currently running my own consulting firm, [errata.ai](https://errata.ai/),
-which offers quality assurance software and services related to collaborative
-writing.
 
 In my free time, I enjoy running and hiking. You can find some of my past
 results at [Athletic.net][1], [Athlinks][2], and [Strava][3].
@@ -46,7 +43,7 @@ results at [Athletic.net][1], [Athlinks][2], and [Strava][3].
 
 [1]: https://www.athletic.net/TrackAndField/Athlete.aspx?AID=533544#!/L0
 [2]: https://www.athlinks.com/athletes/75353415
-[3]: https://www.strava.com/athletes/3334824
+[3]: https://www.strava.com/athletes/joseph_kato
 [4]: https://github.com/jdkato/prose
 [5]: https://github.com/errata-ai/vale
 [6]: https://errata-ai.github.io/vale/styles/

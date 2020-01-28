@@ -1,58 +1,56 @@
-## Basic Configuration
-baseurl = "https://jdkato.io/"
-languageCode = "en"
+baseURL = "https://jdkato.io/"
+languageCode= "en-us"
 
-title = "jdkato.io"
-theme = "hyde-hyde"
+pygmentsCodefences = false
 
-## Hugo Built-in Features
-# disqusShortname = "your-disqus-shortname"
-# googleAnalytics = "your-google-analytics-id"
-# enableRobotsTXT = true
+contentDir = "content"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
 
-summarylength = 30
+disableKinds = ["taxonomy", "taxonomyTerm", "sitemap", "robotsTXT"]
 
-# paginate = 5
+# Note that this currently has no effect in Hugo.
+timezone = "America/Los_Angeles"
 
-## Site Settings
 [params]
-    author = "jdkato"
-    description = ""
-    authorimage = "img/me.png"
-    dateformat = "Jan 2, 2006"
-    highlightjs = true
-    highlightjsstyle = "github"
-    # please choose either GraphComment or Disqus
+# Default page top graphic if not set in page front matter. This is an integer representing the base filename.
+# See the JPEG files below /static/images.
+top_graphic = 5
 
-## Social Accounts
-[params.social]
-    github = "jdkato"
-    keybase = "jdkato"
-    reddit = "jdkato"
-    email = "joseph@jdkato.io"
-    strava = "joseph_kato"
-    # instagram = "<username>"
-    # xing = "<username>"
-    # linkedin = "<username>"
-    # twitter = "<username>"
-    # facebook = "<username>"
-    # stackoverflow = "<username>"
-    # telegram = "<username>"
+github_username = "errata-ai"
+twitter_username = "erratadotai"
+crowdfunding_url = ""
 
+# Date and time formatting, see https://gohugo.io/functions/format/
+time_format_RFC3339 = "2006-01-02T15:04:05Z07:00"
+time_format_RFC822 = "Mon, 02 Jan 2006 15:04:05 -0700"
+time_format_default = "Jan 2, 2006"
 
-[[menu.main]]
-    name = "About"
-    identifier = "about"
-    weight = 100
-    url = "/about/"
-[[menu.main]]
-    name = "Blog"
-    weight = 200
-    identifier = "posts"
-    url = "/posts/"
+# Useful when translating.
+enableMissingTranslationPlaceholders = true
 
-# [[menu.main]]
-#     name = "Portfolio"
-#     identifier = "portfolio"
-#     weight = 200
-#     url = "/portfolio/"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[languages]
+  [languages.en]
+    title = "jdkato.io"
+    languageName ="English"
+    # Weight used for sorting.
+    weight = 1
+    description = "Personal portfolio for @jdkato"
+
+# Be explicit about the output formats. We only want an RSS feed for the home page.
+[outputs]
+home = [ "HTML" ]
+page = [ "HTML"]
+section = [ "HTML"]
+
+# Hugo >= 0.33 is needed to get uglyURLs per section.
+[uglyURLs]
+  post = true
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"

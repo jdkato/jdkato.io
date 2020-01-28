@@ -1,0 +1,80 @@
+{{ define "main" }}
+<section class="bg-primary-3 text-light">
+  <div class="container mt-6">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="display-3">Hello, I'm Joseph.</h1>
+        <div class="my-4">
+          <p class="lead">
+            I'm a software engineer from Portland, OR.
+          </p>
+        </div>
+        <p class="lead pt-6">Things I've made</p>
+        <img class="icon" src="/img/icons/theme/navigation/arrow-down.svg" alt="decoration" data-inject-svg />
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-primary-3 text-light">
+  <div class="container">
+    <div class="row">
+      {{ with .Site.GetPage "section" "projects" }}
+        {{ range .Pages }}
+          {{ $preview := .Resources.GetMatch "preview.png" }}
+            <div class="col-md-6 pt-3" data-aos="fade-up" data-aos-delay="100">
+              <a href="{{ .Params.link }}">
+                <img src="{{ $preview.RelPermalink }}" alt="" class="rounded mb-3 preview">
+              </a>
+              <h4 class="mb-1">{{ .Params.title }} <span class="badge badge-pill badge-primary">tech: {{ .Params.tech }}</span></h4>
+              <div class="text-small text-muted">
+                {{ .Content }}
+              </div>
+            </div>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "script" }}
+<script type="text/javascript">
+    equalheight = function(container){
+        var currentTallest = 0,
+        currentRowStart = 0,
+        rowDivs = new Array(),
+        $el,
+        topPosition = 0;
+        $(container).each(function() {
+
+            $el = $(this);
+            $($el).height('auto')
+            topPostion = $el.position().top;
+
+            if (currentRowStart != topPostion) {
+                for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+                    rowDivs[currentDiv].height(currentTallest);
+                }
+            rowDivs.length = 0; // empty the array
+            currentRowStart = topPostion;
+            currentTallest = $el.height();
+            rowDivs.push($el);
+            } else {
+                rowDivs.push($el);
+                currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+            }
+            for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+                rowDivs[currentDiv].height(currentTallest);
+            }
+        });
+    }
+
+    $(window).on('resize', function() {
+        equalheight('.preview');
+    });
+
+    $(window).on('load', function() {
+        equalheight('.preview');
+    });
+</script>
+{{ end }}
